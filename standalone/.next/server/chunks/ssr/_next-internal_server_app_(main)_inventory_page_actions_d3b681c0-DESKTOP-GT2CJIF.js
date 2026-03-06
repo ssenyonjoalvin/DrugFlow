@@ -1,0 +1,3 @@
+module.exports=[48454,a=>{"use strict";var b=a.i(37936),c=a.i(18558),d=a.i(20971),e=a.i(9223),f=a.i(66879);async function g(a){let b=await (0,d.getServerSession)(e.authOptions);if(!b?.user)return{error:"You must be signed in to delete a medicine."};let g=a?.trim();return g&&await f.prisma.medicine.findUnique({where:{id:g}})?(await f.prisma.medicine.delete({where:{id:g}}),(0,c.revalidatePath)("/inventory"),{success:!0}):{error:"Medicine not found."}}(0,a.i(13095).ensureServerEntryExports)([g]),(0,b.registerServerReference)(g,"40c278220f4fb44c276deebe395f61642e2321ce1d",null),a.s([],67600),a.i(67600),a.s(["40c278220f4fb44c276deebe395f61642e2321ce1d",()=>g],48454)}];
+
+//# sourceMappingURL=_next-internal_server_app_%28main%29_inventory_page_actions_d3b681c0.js.map

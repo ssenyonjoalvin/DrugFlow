@@ -1,0 +1,3 @@
+module.exports=[63021,(e,r,a)=>{r.exports=e.x("@prisma/client-2c3a283f134fdcb6",()=>require("@prisma/client-2c3a283f134fdcb6"))},80769,(e,r,a)=>{r.exports=e.x("bcrypt-a3fecf8c027c10c9",()=>require("bcrypt-a3fecf8c027c10c9"))},25669,e=>{"use strict";var r=e.i(80769),a=e.i(63021);let t=globalThis.prisma??new a.PrismaClient({log:["error"]}),i="administrator@localhost",s="password123";async function c(){if(await t.user.findFirst({where:{email:i}}))return;let e=await r.default.hash(s,12);await t.user.create({data:{name:"Administrator",email:i,password:e,role:"ADMIN"}}),console.log(`[DrugFlow] Created default ADMIN: ${i} / ${s} — change password after first login.`)}e.s(["ensureDefaultAdmin",()=>c],25669)}];
+
+//# sourceMappingURL=%5Broot-of-the-server%5D__a10a0488._.js.map

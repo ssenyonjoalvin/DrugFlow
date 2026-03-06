@@ -1,0 +1,3 @@
+module.exports=[93695,(a,b,c)=>{b.exports=a.x("next/dist/shared/lib/no-fallback-error.external.js",()=>require("next/dist/shared/lib/no-fallback-error.external.js"))},70864,a=>{a.n(a.i(33290))},43619,a=>{a.n(a.i(79962))},13718,a=>{a.n(a.i(85523))},18198,a=>{a.n(a.i(45518))},62212,a=>{a.n(a.i(66114))},79156,a=>{a.n(a.i(66062))},74946,a=>{"use strict";var b=a.i(7997);function c(){return(0,b.jsxs)("div",{className:"rounded-xl border border-zinc-200 bg-white p-6 shadow-sm",children:[(0,b.jsx)("h2",{className:"text-lg font-semibold text-zinc-800",children:"Donations"}),(0,b.jsx)("p",{className:"mt-1 text-sm text-zinc-500",children:"Manage medicine donations. (Placeholder.)"})]})}a.s(["default",()=>c])}];
+
+//# sourceMappingURL=%5Broot-of-the-server%5D__b5ad0c54._.js.map

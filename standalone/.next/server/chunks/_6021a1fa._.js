@@ -1,0 +1,3 @@
+module.exports=[69449,e=>{"use strict";async function r(){{let{config:r}=await e.A(94720);if(r(),!process.env.DATABASE_URL)return void console.warn("[DrugFlow] DATABASE_URL not set. Add a .env file (see .env.example). Skipping default admin creation.");try{let{ensureDefaultAdmin:r}=await e.A(3566);await r()}catch(e){console.warn("[DrugFlow] Could not ensure default admin:",e.message)}}}e.s(["register",()=>r])},94720,e=>{e.v(r=>Promise.all(["server/chunks/[root-of-the-server]__34f83202._.js"].map(r=>e.l(r))).then(()=>r(19057)))},3566,e=>{e.v(r=>Promise.all(["server/chunks/[root-of-the-server]__a10a0488._.js"].map(r=>e.l(r))).then(()=>r(25669)))}];
+
+//# sourceMappingURL=_6021a1fa._.js.map

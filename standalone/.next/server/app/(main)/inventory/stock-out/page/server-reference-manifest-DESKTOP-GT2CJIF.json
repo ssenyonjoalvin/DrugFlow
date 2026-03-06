@@ -1,0 +1,20 @@
+{
+  "node": {
+    "60eeb044e9b4f97d7943f95f0d6bb2be053e4f93e0": {
+      "workers": {
+        "app/(main)/inventory/stock-out/page": {
+          "moduleId": 85700,
+          "async": false,
+          "exportedName": "createStockOutEntry",
+          "filename": "app/(main)/inventory/stock-out/actions.ts"
+        }
+      },
+      "layer": {
+        "app/(main)/inventory/stock-out/page": "action-browser"
+      },
+      "exportedName": "createStockOutEntry",
+      "filename": "app/(main)/inventory/stock-out/actions.ts"
+    }
+  },
+  "edge": {}
+}

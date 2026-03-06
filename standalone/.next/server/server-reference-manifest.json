@@ -1,0 +1,178 @@
+{
+  "node": {
+    "600f5825747102193ff0679b6e68044f31f8fb02f1": {
+      "workers": {
+        "app/(main)/dashboard/settings/categories/page": {
+          "moduleId": 10848,
+          "async": false,
+          "exportedName": "createCategory",
+          "filename": "app/(main)/dashboard/settings/categories/actions.ts"
+        }
+      },
+      "layer": {
+        "app/(main)/dashboard/settings/categories/page": "action-browser"
+      },
+      "filename": "app/(main)/dashboard/settings/categories/actions.ts",
+      "exportedName": "createCategory"
+    },
+    "607380b59478da903d1548f3b38e54ce9a45dbc0f7": {
+      "workers": {
+        "app/(main)/dashboard/settings/categories/page": {
+          "moduleId": 10848,
+          "async": false,
+          "exportedName": "updateCategory",
+          "filename": "app/(main)/dashboard/settings/categories/actions.ts"
+        }
+      },
+      "layer": {
+        "app/(main)/dashboard/settings/categories/page": "action-browser"
+      },
+      "filename": "app/(main)/dashboard/settings/categories/actions.ts",
+      "exportedName": "updateCategory"
+    },
+    "4034a96f5c7dd9db9432ddf77c0b71d692c02df509": {
+      "workers": {
+        "app/(main)/dashboard/settings/categories/page": {
+          "moduleId": 10848,
+          "async": false,
+          "exportedName": "deleteCategory",
+          "filename": "app/(main)/dashboard/settings/categories/actions.ts"
+        }
+      },
+      "layer": {
+        "app/(main)/dashboard/settings/categories/page": "action-browser"
+      },
+      "filename": "app/(main)/dashboard/settings/categories/actions.ts",
+      "exportedName": "deleteCategory"
+    },
+    "60877ac2146f98bfd4da43a28c5d37e9a66cfdadc5": {
+      "workers": {
+        "app/(main)/dashboard/settings/unit-measures/page": {
+          "moduleId": 96059,
+          "async": false,
+          "exportedName": "createUnitMeasure",
+          "filename": "app/(main)/dashboard/settings/unit-measures/actions.ts"
+        }
+      },
+      "layer": {
+        "app/(main)/dashboard/settings/unit-measures/page": "action-browser"
+      },
+      "filename": "app/(main)/dashboard/settings/unit-measures/actions.ts",
+      "exportedName": "createUnitMeasure"
+    },
+    "60c31c0baf18123fc79088c3593171b25aecac294a": {
+      "workers": {
+        "app/(main)/dashboard/settings/unit-measures/page": {
+          "moduleId": 96059,
+          "async": false,
+          "exportedName": "updateUnitMeasure",
+          "filename": "app/(main)/dashboard/settings/unit-measures/actions.ts"
+        }
+      },
+      "layer": {
+        "app/(main)/dashboard/settings/unit-measures/page": "action-browser"
+      },
+      "filename": "app/(main)/dashboard/settings/unit-measures/actions.ts",
+      "exportedName": "updateUnitMeasure"
+    },
+    "40869ac8a6e98735f9f92ff7449085b380487045e8": {
+      "workers": {
+        "app/(main)/dashboard/settings/unit-measures/page": {
+          "moduleId": 96059,
+          "async": false,
+          "exportedName": "deleteUnitMeasure",
+          "filename": "app/(main)/dashboard/settings/unit-measures/actions.ts"
+        }
+      },
+      "layer": {
+        "app/(main)/dashboard/settings/unit-measures/page": "action-browser"
+      },
+      "filename": "app/(main)/dashboard/settings/unit-measures/actions.ts",
+      "exportedName": "deleteUnitMeasure"
+    },
+    "406621b3ae8daca0a64c9b89293d3658eab7acf5b9": {
+      "workers": {
+        "app/(main)/inventory/page": {
+          "moduleId": 48454,
+          "async": false,
+          "exportedName": "deleteMedicine",
+          "filename": "app/(main)/inventory/actions.ts"
+        }
+      },
+      "layer": {
+        "app/(main)/inventory/page": "action-browser"
+      },
+      "filename": "app/(main)/inventory/actions.ts",
+      "exportedName": "deleteMedicine"
+    },
+    "6004b3ba4bc2f4e4ed2fab2cb6d83b3a99837ed13c": {
+      "workers": {
+        "app/(main)/inventory/new/page": {
+          "moduleId": 81634,
+          "async": false,
+          "exportedName": "createMedicine",
+          "filename": "app/(main)/inventory/new/actions.ts"
+        }
+      },
+      "layer": {
+        "app/(main)/inventory/new/page": "action-browser"
+      },
+      "filename": "app/(main)/inventory/new/actions.ts",
+      "exportedName": "createMedicine"
+    },
+    "60f5749a32bb9529c69ee5f00077cb9aa0e4335725": {
+      "workers": {
+        "app/(main)/inventory/stock-in/page": {
+          "moduleId": 30038,
+          "async": false,
+          "exportedName": "createStockInEntry",
+          "filename": "app/(main)/inventory/stock-in/actions.ts"
+        }
+      },
+      "layer": {
+        "app/(main)/inventory/stock-in/page": "action-browser"
+      },
+      "filename": "app/(main)/inventory/stock-in/actions.ts",
+      "exportedName": "createStockInEntry"
+    },
+    "60f3dfc706990d3defe82d95be04cab30a22d1c1b3": {
+      "workers": {
+        "app/(main)/inventory/stock-out/page": {
+          "moduleId": 85700,
+          "async": false,
+          "exportedName": "createStockOutEntry",
+          "filename": "app/(main)/inventory/stock-out/actions.ts"
+        }
+      },
+      "layer": {
+        "app/(main)/inventory/stock-out/page": "action-browser"
+      },
+      "filename": "app/(main)/inventory/stock-out/actions.ts",
+      "exportedName": "createStockOutEntry"
+    },
+    "601b2838856df3d56cfefc10dc95a376b88749eff6": {
+      "workers": {
+        "app/admin/users/new/page": {
+          "moduleId": 85804,
+          "async": false,
+          "exportedName": "createUser",
+          "filename": "app/admin/users/actions.ts"
+        },
+        "app/admin/users/page": {
+          "moduleId": 40563,
+          "async": false,
+          "exportedName": "createUser",
+          "filename": "app/admin/users/actions.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/new/page": "action-browser",
+        "app/admin/users/page": "action-browser"
+      },
+      "filename": "app/admin/users/actions.ts",
+      "exportedName": "createUser"
+    }
+  },
+  "edge": {},
+  "encryptionKey": "MZzFmKzwgzlgLwlVwEcdBgI6CChri+Z7A4r5Mjgm4DA="
+}

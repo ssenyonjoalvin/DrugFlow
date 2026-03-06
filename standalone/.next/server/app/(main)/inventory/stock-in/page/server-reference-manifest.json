@@ -1,0 +1,20 @@
+{
+  "node": {
+    "60f5749a32bb9529c69ee5f00077cb9aa0e4335725": {
+      "workers": {
+        "app/(main)/inventory/stock-in/page": {
+          "moduleId": 30038,
+          "async": false,
+          "exportedName": "createStockInEntry",
+          "filename": "app/(main)/inventory/stock-in/actions.ts"
+        }
+      },
+      "layer": {
+        "app/(main)/inventory/stock-in/page": "action-browser"
+      },
+      "exportedName": "createStockInEntry",
+      "filename": "app/(main)/inventory/stock-in/actions.ts"
+    }
+  },
+  "edge": {}
+}

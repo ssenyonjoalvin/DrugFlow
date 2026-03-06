@@ -1,0 +1,20 @@
+{
+  "node": {
+    "6004b3ba4bc2f4e4ed2fab2cb6d83b3a99837ed13c": {
+      "workers": {
+        "app/(main)/inventory/new/page": {
+          "moduleId": 81634,
+          "async": false,
+          "exportedName": "createMedicine",
+          "filename": "app/(main)/inventory/new/actions.ts"
+        }
+      },
+      "layer": {
+        "app/(main)/inventory/new/page": "action-browser"
+      },
+      "exportedName": "createMedicine",
+      "filename": "app/(main)/inventory/new/actions.ts"
+    }
+  },
+  "edge": {}
+}

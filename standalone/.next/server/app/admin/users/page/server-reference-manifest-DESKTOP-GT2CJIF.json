@@ -1,0 +1,20 @@
+{
+  "node": {
+    "60f367c7eb994bde7dc778cd10f4582b4e29e1884e": {
+      "workers": {
+        "app/admin/users/page": {
+          "moduleId": 40563,
+          "async": false,
+          "exportedName": "createUser",
+          "filename": "app/admin/users/actions.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/page": "action-browser"
+      },
+      "exportedName": "createUser",
+      "filename": "app/admin/users/actions.ts"
+    }
+  },
+  "edge": {}
+}

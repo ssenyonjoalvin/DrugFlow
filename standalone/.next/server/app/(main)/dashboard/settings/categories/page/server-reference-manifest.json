@@ -1,0 +1,50 @@
+{
+  "node": {
+    "600f5825747102193ff0679b6e68044f31f8fb02f1": {
+      "workers": {
+        "app/(main)/dashboard/settings/categories/page": {
+          "moduleId": 10848,
+          "async": false,
+          "exportedName": "createCategory",
+          "filename": "app/(main)/dashboard/settings/categories/actions.ts"
+        }
+      },
+      "layer": {
+        "app/(main)/dashboard/settings/categories/page": "action-browser"
+      },
+      "exportedName": "createCategory",
+      "filename": "app/(main)/dashboard/settings/categories/actions.ts"
+    },
+    "607380b59478da903d1548f3b38e54ce9a45dbc0f7": {
+      "workers": {
+        "app/(main)/dashboard/settings/categories/page": {
+          "moduleId": 10848,
+          "async": false,
+          "exportedName": "updateCategory",
+          "filename": "app/(main)/dashboard/settings/categories/actions.ts"
+        }
+      },
+      "layer": {
+        "app/(main)/dashboard/settings/categories/page": "action-browser"
+      },
+      "exportedName": "updateCategory",
+      "filename": "app/(main)/dashboard/settings/categories/actions.ts"
+    },
+    "4034a96f5c7dd9db9432ddf77c0b71d692c02df509": {
+      "workers": {
+        "app/(main)/dashboard/settings/categories/page": {
+          "moduleId": 10848,
+          "async": false,
+          "exportedName": "deleteCategory",
+          "filename": "app/(main)/dashboard/settings/categories/actions.ts"
+        }
+      },
+      "layer": {
+        "app/(main)/dashboard/settings/categories/page": "action-browser"
+      },
+      "exportedName": "deleteCategory",
+      "filename": "app/(main)/dashboard/settings/categories/actions.ts"
+    }
+  },
+  "edge": {}
+}

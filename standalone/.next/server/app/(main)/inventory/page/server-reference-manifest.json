@@ -1,0 +1,20 @@
+{
+  "node": {
+    "406621b3ae8daca0a64c9b89293d3658eab7acf5b9": {
+      "workers": {
+        "app/(main)/inventory/page": {
+          "moduleId": 48454,
+          "async": false,
+          "exportedName": "deleteMedicine",
+          "filename": "app/(main)/inventory/actions.ts"
+        }
+      },
+      "layer": {
+        "app/(main)/inventory/page": "action-browser"
+      },
+      "exportedName": "deleteMedicine",
+      "filename": "app/(main)/inventory/actions.ts"
+    }
+  },
+  "edge": {}
+}

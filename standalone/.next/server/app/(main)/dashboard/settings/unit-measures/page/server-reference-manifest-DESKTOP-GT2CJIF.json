@@ -1,0 +1,50 @@
+{
+  "node": {
+    "60d71b9762676562fe8bc666e3c08d5dcccf20d311": {
+      "workers": {
+        "app/(main)/dashboard/settings/unit-measures/page": {
+          "moduleId": 96059,
+          "async": false,
+          "exportedName": "createUnitMeasure",
+          "filename": "app/(main)/dashboard/settings/unit-measures/actions.ts"
+        }
+      },
+      "layer": {
+        "app/(main)/dashboard/settings/unit-measures/page": "action-browser"
+      },
+      "exportedName": "createUnitMeasure",
+      "filename": "app/(main)/dashboard/settings/unit-measures/actions.ts"
+    },
+    "60e874f37f82d076d57daf40e9a7bdd8f6f3f0d4f6": {
+      "workers": {
+        "app/(main)/dashboard/settings/unit-measures/page": {
+          "moduleId": 96059,
+          "async": false,
+          "exportedName": "updateUnitMeasure",
+          "filename": "app/(main)/dashboard/settings/unit-measures/actions.ts"
+        }
+      },
+      "layer": {
+        "app/(main)/dashboard/settings/unit-measures/page": "action-browser"
+      },
+      "exportedName": "updateUnitMeasure",
+      "filename": "app/(main)/dashboard/settings/unit-measures/actions.ts"
+    },
+    "40e60d822a09fb0d4e9b9f3e6c272b23389b1ce5ad": {
+      "workers": {
+        "app/(main)/dashboard/settings/unit-measures/page": {
+          "moduleId": 96059,
+          "async": false,
+          "exportedName": "deleteUnitMeasure",
+          "filename": "app/(main)/dashboard/settings/unit-measures/actions.ts"
+        }
+      },
+      "layer": {
+        "app/(main)/dashboard/settings/unit-measures/page": "action-browser"
+      },
+      "exportedName": "deleteUnitMeasure",
+      "filename": "app/(main)/dashboard/settings/unit-measures/actions.ts"
+    }
+  },
+  "edge": {}
+}

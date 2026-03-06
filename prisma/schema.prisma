@@ -1,0 +1,83 @@
+// Prisma schema for DrugFlow - Medicine Inventory Management
+// https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  ADMIN
+  STOREKEEPER
+  VIEWER
+}
+
+model User {
+  id        String   @id @default(cuid())
+  name      String
+  email     String   @unique
+  password  String   // Always store bcrypt-hashed; never expose in API
+  role      Role
+  avatarUrl String?
+  createdAt DateTime @default(now())
+}
+
+model Category {
+  id          String   @id @default(cuid())
+  name        String
+  description String?
+  createdAt   DateTime @default(now())
+  medicines   Medicine[]
+}
+
+model UnitMeasure {
+  id          String   @id @default(cuid())
+  name        String
+  description String?
+  createdAt   DateTime @default(now())
+  medicines   Medicine[]
+}
+
+model Medicine {
+  id            String       @id @default(cuid())
+  name          String
+  categoryId    String
+  category      Category     @relation(fields: [categoryId], references: [id])
+  unitMeasureId String
+  unitMeasure   UnitMeasure  @relation(fields: [unitMeasureId], references: [id])
+  dosage        String?
+  minStock      Int          @default(0)
+  quantity      Int          @default(0)
+  notes         String?
+  createdAt     DateTime     @default(now())
+  stockInEntries   StockInEntry[]
+  stockOutEntries  StockOutEntry[]
+}
+
+model StockInEntry {
+  id          String    @id @default(cuid())
+  medicineId  String
+  medicine    Medicine  @relation(fields: [medicineId], references: [id])
+  batchNumber String
+  quantity    Int
+  supplier    String?
+  expiryDate  DateTime?
+  notes       String?
+  createdAt   DateTime  @default(now())
+}
+
+model StockOutEntry {
+  id           String   @id @default(cuid())
+  medicineId   String
+  medicine     Medicine @relation(fields: [medicineId], references: [id])
+  quantity     Int
+  reason       String?
+  dispensedBy  String
+  dateOfIssue  DateTime
+  createdAt    DateTime @default(now())
+}
+

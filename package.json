@@ -2,25 +2,66 @@
   "name": "durgflow",
   "version": "0.1.0",
   "private": true,
+  "main": "electron/main.js",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node --max-old-space-size=8192 node_modules/next/dist/bin/next build --webpack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:seed": "tsx prisma/seed.ts",
+    "postinstall": "prisma generate",
+    "copy-standalone": "node scripts/copy-standalone.js",
+    "create-template-db": "node scripts/create-template-db.js",
+    "electron": "electron .",
+    "electron:dev": "next build && npm run copy-standalone && electron .",
+    "electron:pack": "next build && npm run copy-standalone && node scripts/create-template-db.js && electron-builder --dir",
+    "electron:dist": "next build && npm run copy-standalone && node scripts/create-template-db.js && electron-builder",
+    "electron:dist:win": "next build && npm run copy-standalone && node scripts/create-template-db.js && electron-builder --win"
   },
   "dependencies": {
+    "@prisma/client": "^6.9.0",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
     "next": "16.1.6",
+    "next-auth": "^4.24.10",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "recharts": "^3.7.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@types/bcrypt": "^5.0.2",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
+    "prisma": "^6.9.0",
     "tailwindcss": "^4",
+    "tsx": "^4.19.2",
     "typescript": "^5"
+  },
+  "build": {
+    "appId": "com.drugflow.app",
+    "productName": "Drug Flow",
+    "win": {
+      "signAndEditExecutable": false
+    },
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "electron/**"
+    ],
+    "extraResources": [
+      { "from": ".next/standalone", "to": "standalone" },
+      { "from": ".next/static", "to": "standalone/.next/static" },
+      { "from": "public", "to": "standalone/public" },
+      { "from": "template.db", "to": "template.db" }
+    ]
   }
 }

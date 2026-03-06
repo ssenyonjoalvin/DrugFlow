@@ -1,0 +1,91 @@
+{
+  "name": "drugflow",
+  "version": "1.0.0",
+  "description": "Drug Flow - Pharmacy Inventory Management System",
+  "author": "Drug Flow Team",
+  "private": true,
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:seed": "tsx prisma/seed.ts",
+    "postinstall": "prisma generate",
+    "electron:dev": "concurrently \"npm run dev\" \"wait-on http://localhost:3000 && electron .\"",
+    "electron:build": "node scripts/clean.js && npm run build && node scripts/prepare-standalone.js",
+    "electron:package": "npm run electron:build && electron-builder --win",
+    "electron:package:dir": "npm run electron:build && electron-builder --win --dir",
+    "dist": "npm run electron:package"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.9.0",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "next": "16.1.6",
+    "next-auth": "^4.24.10",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "recharts": "^3.7.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/bcrypt": "^5.0.2",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "concurrently": "^9.1.0",
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "prisma": "^6.9.0",
+    "tailwindcss": "^4",
+    "tsx": "^4.19.2",
+    "typescript": "^5",
+    "wait-on": "^8.0.1"
+  },
+  "build": {
+    "appId": "com.drugflow.inventory",
+    "productName": "Drug Flow",
+    "copyright": "Copyright © 2025",
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "files": [
+      "electron/**/*",
+      "standalone/**/*",
+      "!**/.git*",
+      "!**/node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}",
+      "!**/node_modules/*/{test,__tests__,tests,powered-test,example,examples}",
+      "!**/*.{iml,o,hprof,orig,pyc,pyo,rbc,swp,csproj,sln,xproj}",
+      "!.next/cache/**"
+    ],
+    "extraResources": [
+      {
+        "from": "resources/default.db",
+        "to": "default.db"
+      }
+    ],
+    "win": {
+      "target": [{ "target": "nsis", "arch": ["x64"] }],
+      "icon": "build/icon.ico",
+      "signAndEditExecutable": false
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Drug Flow",
+      "uninstallDisplayName": "Drug Flow Inventory"
+    },
+    "asar": true,
+    "asarUnpack": ["**/node_modules/@prisma/**", "**/node_modules/bcrypt/**", "standalone/**/*"],
+    "compression": "maximum",
+    "publish": null
+  }
+}
